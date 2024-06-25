@@ -1,0 +1,35 @@
+.gigcart {
+    position: relative;
+    width: 10vw;
+    height: auto;
+    border: 1px solid lightgray;
+    margin-bottom: 25px;
+
+    img {
+        position: relative;
+        width: auto; /* Reset image width */
+        height: auto; /* Reset image height */
+        max-width: 100%; /* Ensure the image fits within the container */
+        object-fit: cover;
+        &:hover{
+            zoom: 3%;
+        }
+    }
+
+    .info {
+        position: absolute;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        p {
+            color: white;
+        }
+    }
+}
+
+
+
+
+

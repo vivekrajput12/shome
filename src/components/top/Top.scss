@@ -1,0 +1,30 @@
+.top{
+    font-family: system-ui;
+    background-color: #e3e3e3;
+    display: flex;
+    gap: 25vw;
+    width: 100%;
+    .left{
+        margin-left: 2%;
+    }
+    .right{
+        .list{
+            display: flex;
+
+            gap: 1vw;
+            list-style-type: none;
+           li{
+            display: flex;
+            a{
+                display: flex;
+                text-decoration: none;
+            }
+            img{
+                height: 3vh;
+                width: 2vw;
+            }
+           }
+
+        }
+    }
+}

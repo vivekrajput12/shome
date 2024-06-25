@@ -1,0 +1,32 @@
+.feedback{
+    position: relative;
+    display: flex;
+    width: 40vw;
+    height: 38vh;
+    border: 1px solid lightgray;
+    margin-bottom: 25px;
+
+    img {
+        top: 11%;
+        left: 2%;
+        position: relative;
+        width: 14%;
+        border-radius: 50%;
+        height: 23%;
+        max-width: 14%;
+        object-fit: cover;
+    }
+
+    .info {
+        position: absolute;
+        padding: 10px 20px;
+        display: flex;
+        left: 16%;
+        flex-direction: column;
+        gap: 15px;
+
+        p {
+            color: #111;
+        }
+    }
+}

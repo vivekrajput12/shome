@@ -1,0 +1,22 @@
+.feature{
+    background-color: #c9c9c9;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14vh;
+    margin-bottom: 14vh;
+    .list{
+        display: flex;
+        gap: 4vw;
+        list-style-type: none;
+        font-family: monospace;
+        font-size: x-large;
+        font-weight: 100;
+        align-items: center;
+        img{
+            height: 3vh;
+            width: 3vh;
+        }
+    }
+}

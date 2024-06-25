@@ -1,0 +1,102 @@
+// .menu{
+//     width: 87vw;
+//     background-color: orangered;
+//     display: flex;
+//     justify-content: center;
+//     border-top-left-radius: 42%;
+//   border-top-right-radius: 46%;
+//     .list{
+//         margin-left: -4%;
+//         display: flex;
+//         gap: 7vw;
+//         list-style-type: none;
+//         justify-content: center;
+//         ul{
+            
+//             display: flex;
+//             .drop{
+//                 display: flex;
+//                 flex-direction: row;
+//                 position: relative;
+//                 &:hover {
+//                     .dropdown {
+//                       display: block;
+//                     }
+//                   }
+          
+//                   &.open {
+//                     .dropdown {
+//                       display: block;
+//                     }
+//                   }
+//                     .dropdown{
+//                         display: none;
+//                         position: absolute;
+//                         overflow-y: auto;
+//                         background-color: white;
+//                         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+//                         z-index: 1;
+              
+//                         li {
+//                           padding: 10px;
+//                         }
+//                     }
+//             }
+//         }
+//     }
+// }
+.menu {
+    width: 87vw;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 42%;
+    border-top-right-radius: 46%;
+  
+    .list {
+      margin-left: -4%;
+      display: flex;
+      gap: 7vw;
+      list-style-type: none;
+      justify-content: center;
+  
+      ul {
+        display: flex;
+  
+        .drop {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          cursor: pointer;
+  
+          .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            overflow-y: auto;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 2; /* Increase the z-index to ensure overlap */
+  
+            li {
+              padding: 10px;
+            }
+          }
+  
+          &:hover {
+            .dropdown {
+              display: block;
+            }
+          }
+  
+          &.open {
+            .dropdown {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  
